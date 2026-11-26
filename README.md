@@ -1,7 +1,8 @@
 # pymat
 
 **A scientific-computing desktop written in Python, built on the sibling
-[pydui](../pydui) checkout (the Python bindings for dui).**
+[pydui](https://github.com/steveriemannx/pydui) checkout (the Python bindings
+for dui).**
 
 This is a Python workbench, not a MATLAB clone: there is no M language, no M
 syntax translation, and no MATLAB-style function names. You write ordinary
@@ -249,4 +250,6 @@ python tests/test_live_plot.py
 
 ## License
 
-MIT. See the pydui / dui repositories for their respective licenses.
+MIT. See the [pydui](https://github.com/steveriemannx/pydui) /
+[dui](https://github.com/steveriemannx/dui) repositories for their respective
+licenses.
