@@ -1,0 +1,13 @@
+name: pymat
+channels:
+  - conda-forge
+dependencies:
+  - python=3.14
+  - numpy
+  - pandas
+  - scipy
+  - matplotlib
+  - pip
+# pydui is used from ../pydui/python; setup_env.sh puts it on the path.  It is
+# not a PyPI dependency because it contains a compiled extension built against
+# the dui install in ../pydui/.dui-prefix.
