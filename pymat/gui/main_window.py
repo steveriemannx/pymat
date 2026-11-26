@@ -254,7 +254,9 @@ class PymatWindow(dui.WindowImplBase):
                                       height="360")
         panel.add_item(self.file_tree)
         self.file_tree.attach_event("return", self.on_open_selected)
-        self.file_tree.set_tooltip_text("单击选择；双击/箭头展开目录；双击文件打开")
+        self.file_tree.set_tooltip_text(
+            "Click to select; double-click or use the arrow to expand a folder; "
+            "double-click a file to open it")
         self._tree_root = self.file_tree.get_root_node()
         self._expanded_dirs: set[str] = set()
         self._selected_path: str | None = None
@@ -308,7 +310,7 @@ class PymatWindow(dui.WindowImplBase):
                 self, text=title, width=str(self._ws_widths[index]),
                 height="24", font="system_bold_12", normal_text_color=theme.MUTED,
                 text_align="hcenter,vcenter", text_padding="5,0,5,0",
-                tooltip_text=f"按 {title} 排序")
+                tooltip_text=f"Sort by {title}")
             label.attach_click(
                 lambda args, i=index: (self._workspace_header_clicked(i), True)[1])
             header.add_item(label)
